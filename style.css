@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html {
+    font-size: 16px;
+ 
+}
+body {
+    font-family: 'Roboto',Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;/* space between divs are equal*/
+    align-items: center;/* center the items vertically */
+    height: 56px; /* height of the header */
+    padding: 0 16px; /* padding on left and right */
+}
+.left_section{
+    display: flex; /* display flex for left header */
+    align-items: center; /* center the items vertically */
+    cursor: pointer; /* cursor pointer for left header */
+}
+.left_section img{
+    width:46%;
+    padding-left: 16px;
+}
+.mid_section{
+    display: flex; /* display flex for mid header */
+    align-items: center; /* center the items vertically */
+   margin-left: -9px; /* margin left for mid header */
+}
+.mid_section form{
+    display: flex; /* display flex for form */
+    width: 628px; /* width of the form */
+    height:40px; /* height of the form */ 
+}
+.mid_section input{
+    width:100%; /* width of the input */
+    border-radius: 2px 0 0 2px; /* border radius of the input */
+    padding: 12px ; /* padding of the input */
+    font-size:1.6rem; /* font size of the input */
+    border: 1px solid #d3d3d3; /* border of the input */
+    border-right: none; /* border right of the input */
+}
+.mid_section button{
+    width: 64px;
+    border-radius: 2px 0 0 2px ; /* border radius of the button */
+    border: 1px solid #d3d3d3; /* border of the input */
+    padding-top: 4px; /* padding top of the button */
+    background-color: #f8f8f8; /* background color of the button */
+    cursor: pointer; /* cursor pointer for button */
+}
+.mid_section button:hover{
+    background-color: #c6c6c6; /* background color of the button on hover */
+    border-color: #f0f0f0;
+}
+/* Style for the microphone icon */
+.mid_section .mic {
+    width: 40px;
+    height: 40px;
+    background-color: #f9f9f9; 
+    border-radius: 50%;/* background color of the mic icon */
+    cursor: pointer;
+    display: flex; /* display flex for mic icon */
+    justify-content: center; /* center the items horizontally */
+    align-items: center; /* center the items vertically */
+    margin-left: 10px; /* margin left for mic icon */
+    cursor: pointer; /* cursor pointer for mic icon */
+}
+.right_section a{
+   
+    padding-right: 18px;
+    text-decoration: none; /* remove underline from the link */
+    color: black;
+
+}
+.content_area{
+    height: calc(100vh - 56px); /* height of the content area */
+    display: flex;
+    background-color: #f9f9f9;
+
+}
+aside{
+    height: 100%;
+    width: 280px; /* width of the aside */
+    background-color: white; /* background color of the aside */
+    overflow-y: auto;/* overflow hidden for the aside automatic creat scroll bar */
+}
+nav{
+    width :100%;
+    display: flex;
+    flex-direction: column; /* flex direction column for nav , defult of element in row */
+    margin: 15px 0; /* margin top and bottom for nav  , right and left*/ 
+    padding-right: 15px;
+}
+ .nav-link{
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    text-decoration: none; 
+    color: #030303; /* color of the nav link */
+ }
+ .nav-link:hover{
+    background-color: rgba(0,0,0,0.05) ;/* background color of the nav link on hover */
+    color: #030303; /* color of the nav link on hover */
+}
+hr{
+    margin: 10px 0; /* margin of the hr */
+    border: none; /* border of the hr */
+    height: 1px; /* height of the hr */
+    background-color: #e5e5e5; /* background color of the hr */
+}
+ .nav-link span{
+    margin-left: 24px;
+    font-size: 1.4rem; /* font size of the nav link */
+    font-weight: 400; /* font weight of the nav link */
+    line-height: 2em;
+    color:#030303; /* color of the nav link */
+ }
+ .active{
+    background-color: #e5e5e5;
+    
+ }
+ #active-span{
+    font-weight: 500;
+ }
+ p{
+    font-size:1.4rem;
+    color:#606060; /* color of the nav link */
+    font-weight: 500;
+    padding: 8px 16px;
+    text-transform: uppercase; /* text transform of the nav link */
+
+ } 
+ .channel_img{
+    height: 24px;
+    width: 24px; /* height and width of the channel image */
+    border-radius: 50%; /* border radius of the channel image */
+ }  
+  main{
+    height: 100%;
+    width: 100%; 
+
+    padding: 35px 15px;
+    border-top: 1px solid #ddd; /* border top of the main */
+    overflow-y: auto; /* overflow hidden for the main automatic creat scroll bar */
+  }
+  .video_container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around; /* space between divs are equal*/
+    flex-wrap: wrap; /* Allows wrapping if space is insufficient */
+    
+}
+
+.video {
+    width: 330px; /* Adjust width to fit multiple items in a row */
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.thumbnail{
+    width: 100%;
+    height: 187px;
+    margin-bottom: 12px; /* height of the thumbnail */
+}
+.thumbnail img{
+    width: 100%; /* width of the thumbnail image */
+    height: 100%; /* height of the thumbnail image */
+}
+.video_detials{
+    display: flex; /* display flex for video details */
+    
+}
+.title{
+    display: flex; /* display flex for title */
+    flex-direction: column; /* flex direction column for title */
+
+}
+.title a{
+    text-decoration: none; /* remove underline from the link */
+
+}
+.video_title{
+    font-size: 1.6rem; /* font size of the video title */
+    color: rgb(3,3,3); /* color of the video title */
+   
+    font-weight: 500; /* font weight of the video title */
+    line-height: 2.2rem; /* line height of the video title */
+    max-width: 278px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    display: -webkit-box;/*to work in chrome*/
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2; /* standard property for compatibility */
+    -webkit-box-orient: vertical;
+    
+}
